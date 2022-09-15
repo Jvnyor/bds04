@@ -1,4 +1,4 @@
-package com.devsuperior.bds04.entities;
+package com.Jvnyor.bds04.entities;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -9,6 +9,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+
+import com.Jvnyor.bds04.dto.CityDTO;
 
 @Entity
 @Table(name = "tb_city")
@@ -28,6 +30,11 @@ public class City {
 	public City(Long id, String name) {
 		this.id = id;
 		this.name = name;
+	}
+	
+	public City(CityDTO dto) {
+		id = dto.getId();
+		name = dto.getName();
 	}
 
 	public Long getId() {

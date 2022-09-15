@@ -1,4 +1,4 @@
-package com.devsuperior.bds04;
+package com.Jvnyor.bds04;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

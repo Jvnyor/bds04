@@ -1,4 +1,4 @@
-package com.devsuperior.bds04.entities;
+package com.Jvnyor.bds04.entities;
 
 import java.time.LocalDate;
 
@@ -35,7 +35,7 @@ public class Event {
 		this.url = url;
 		this.city = city;
 	}
-
+	
 	public Long getId() {
 		return id;
 	}

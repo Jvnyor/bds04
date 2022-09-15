@@ -1,13 +1,19 @@
-package com.devsuperior.bds04.dto;
+package com.Jvnyor.bds04.dto;
 
 import java.io.Serializable;
 
-import com.devsuperior.bds04.entities.City;
+import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
+
+import com.Jvnyor.bds04.entities.City;
 
 public class CityDTO implements Serializable {
 	private static final long serialVersionUID = 1L;
 	
 	private Long id;
+	
+	@NotBlank(message = "Campo requerido")
+	@NotNull
 	private String name;
 	
 	public CityDTO() {
